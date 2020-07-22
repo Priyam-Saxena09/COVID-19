@@ -1,0 +1,90 @@
+body img
+{
+     height:2400px;
+     width:109.4%;
+     opacity:0.62;
+}
+.cont
+{
+    position: absolute;
+    top:2%;
+    left:18%;
+   text-align: center;
+    
+}
+.cont b
+{
+    font-size: 335%;
+    font-family:cursive;
+    color:gold;
+    font-weight: 100;
+    
+    
+}
+select
+{
+    height:27px;
+}
+#table
+{
+    position: absolute;
+    left:10%;
+    top:40%;
+    text-align: center;
+}
+#table1
+{
+    position: absolute;
+    top:70%;
+    left:1%;
+    text-align: center;
+}
+table
+{
+    width:280%;
+    
+}
+table th
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 180%;
+
+
+}
+table td
+{
+    font-family:cursive;
+    font-size: 102%;
+    padding-bottom:2%;
+    color:navy;
+}
+table th p
+{
+    font-family:Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif';
+    font-size: 80%;
+}
+
+h2
+{
+    font-size: 180%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+
+}
+#tab
+{
+    width:165%;
+}
+#sub
+{
+    height:30px;
+    width: 65px;
+}
+b
+{
+   font-size: 145%;
+}
+p{
+    font-size: 120%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

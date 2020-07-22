@@ -2,7 +2,6 @@ const request = require("request");
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
-app.use(express.static("images"));
 const path = require("path");
 const url = "https://api.covid19india.org/state_district_wise.json";
 const url1 = "https://coronavirus-19-api.herokuapp.com/countries/india";
@@ -11,7 +10,8 @@ var active = "";
 var confirmed = "";
 var recover = "";
 var death = "";
-const tempath = path.join(__dirname,"../COVID-19/template");
+const tempath = path.join(__dirname,"../Covid-19/template");
+app.use(express.static(tempath));
 app.set("view engine","hbs");
 app.set("views",tempath);
 request({url:url1},(error,response) => {

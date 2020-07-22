@@ -40,6 +40,7 @@ document.querySelector("body img").src;
             document.querySelector("body img").src;
             document.getElementById("sub").addEventListener("click",() => {
             const state = document.getElementById("state").value;
+            document.querySelector("#sub").setAttribute("disabled","disabled");
             fetch("https://api.covid19india.org/state_district_wise.json").then((response) => {
                 response.json().then((data) => {
                     if(data.error)
@@ -80,6 +81,7 @@ document.querySelector("body img").src;
                       
                 })
             })
+            document.querySelector("#sub").removeAttribute("disabled");
             })
             var date = new Date();
             const datearr = ["January","February","March","April","May","June","July","August","September","October","November","December"];

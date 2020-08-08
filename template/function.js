@@ -83,6 +83,8 @@ document.querySelector("body img").src;
             })
             document.querySelector("#sub").removeAttribute("disabled");
             })
-            var date = new Date();
             const datearr = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-            document.querySelector(".cont b").textContent= date.toDateString() + " " + date.getHours() + ":" + date.getMinutes();
+            setInterval(() => {
+            var date = new Date();
+            document.querySelector(".cont b").textContent= date.toDateString() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+        },1000)

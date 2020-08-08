@@ -58,10 +58,10 @@ document.querySelector("body img").src;
                     <th>Active</th>
                     <th>Confirmed</th>
                     <th>Recover</th>
-                    <th>Death</th>
+                    <th>Deceased</th>
                     <th><p>Increase in</p><p>Confirmed cases</p></th>
-                    <th><p>Increase in</p><p>Recover</p></th>
-                    <th><p>Increase in</p><p>Death</p></th>
+                    <th><p>Increase in</p><p>Recover cases</p></th>
+                    <th><p>Increase in</p><p>deceased cases</p></th>
                 </thead>`;
                       for(let i=0;i<j;i++)
                       {
@@ -85,4 +85,4 @@ document.querySelector("body img").src;
             })
             var date = new Date();
             const datearr = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-            document.querySelector(".cont b").textContent= date.getDate() + " " + datearr[date.getMonth()] + " " + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes();
+            document.querySelector(".cont b").textContent= date.toDateString() + " " + date.getHours() + ":" + date.getMinutes();

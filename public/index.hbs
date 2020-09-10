@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+  <link rel="icon" href="Images/COV.png">
+  <title>COVID-19 INDIA</title>
+</head>
+
+<body
+  style="background-image:url('Images/covid-19-coronavirus-outbreak-design-with-falling-virus-cell-typography-letter-light-background_1314-2752.jpg');">
+  <div class="d-flex flex-column justify-content-center align-items-center mb-5">
+    <div class="p-2 bd-highlight">
+      <h1 id="time" class="display-3 mb-4" style="font-family: 'Anton', sans-serif;"></h1>
+    </div>
+    <div class="p-2 bd-highlight">
+      <p style="font-size: 2rem; font-weight: bold; font-family: 'Kaushan Script', cursive;">Select your State and see
+        the COVID-19 Cases of all the districts
+        in your state</p>
+    </div>
+    <div class="input-group my-5">
+      <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+      </select>
+      <div class="input-group-append">
+        <button class="btn btn-outline-primary" type="button">Search</button>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column justify-content-center align-items-center bd-highlight mb-5">
+    <div class="pr-2 bd-highlight mb-2">
+      <h2 class="display-2" style="font-family: 'Anton', sans-serif;">Total cases in India</h2>
+    </div>
+    <div class="container-fluid">
+    <table class="table mb-5" id="india" style="background:rgba(9, 194, 154, 0.815)">
+      <thead class="thead-light">
+        <tr>
+          <th class="text-center" scope="col"><h5>Active</h5></th>
+          <th class="text-center" scope="col"><h5>Confirmed</h5></th>
+          <th class="text-center" scope="col"><h5>Recover</h5></th>
+          <th class="text-center" scope="col"><h5>Deceased</h5></th>
+          <th class="text-center mr-n4" scope="col"><h5>Confirmed Cases Today</h5></th>
+          <th class="text-center" scope="col"><h5>Deceased Cases Today</h5></th>
+        </tr>
+      </thead>
+    </table>
+    </div>
+    <div class="bd-highlight mt-5">
+      <h2 class="display-4" style="font-family: 'Anton', sans-serif;">Total cases in Districts of Selected State</h2>
+    </div>
+  </div>
+  <table class="table mt-5 py-5" style="background:rgba(9, 194, 185, 0.815)" id="all">
+    <thead class="thead-dark">
+      <tr>
+        <th class="text-center" scope="col"><h5>District</h5></th>
+        <th class="text-center" scope="col"><h5>Active Cases</h5></th>
+        <th class="text-center" scope="col"><h5>Confirmed Cases</h5></th>
+        <th class="text-center" scope="col"><h5>Recover Cases</h5></th>
+        <th class="text-center" scope="col"><h5>Deceased Cases</h5></th>
+        <th class="text-center" scope="col"><h5>Confirmed Cases Today</h5></th>
+        <th class="text-center" scope="col"><h5>Recover Cases Today</h5></th>
+        <th class="text-center" scope="col"><h5>Deceased Cases Today</h5></th>
+      </tr>
+    </thead>
+  </table>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="output.js"></script>
+</body>
+
+</html>

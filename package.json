@@ -1,13 +1,12 @@
 {
-  "name": "COVID-19",
+  "name": "covid-19",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node app.js",
+    "dev":"env-cmd dev.env nodemon app.js"    
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -16,6 +15,7 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
+    "env-cmd": "^8.0.2",
     "nodemon": "^2.0.4"
   }
 }

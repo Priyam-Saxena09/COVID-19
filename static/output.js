@@ -54,7 +54,7 @@ fetch("https://coronavirus-19-api.herokuapp.com/countries/india").then((response
 button.addEventListener("click", () => {
     const value = document.querySelector("#inputGroupSelect04").value
     button.setAttribute("disabled", "disabled")
-    fetch("http://localhost:3000/data").then((response) => {
+    fetch("/data").then((response) => {
         response.json().then((data) => {
             const subtable = document.getElementById("all")
             const tbody = document.createElement("tbody")
